@@ -8,8 +8,9 @@ module.exports = {
       "arrow-body-style": ["error", "as-needed"]
     }],
   },
-  "globals": {
-    "document": true,
-    "window": true
+  "env": {
+    "browser": true,
+    "jest": true,
+    "node": true
   }
 }
