@@ -1,0 +1,35 @@
+{
+  "name": "nabais",
+  "version": "1.0.0",
+  "description": "Not As Bad As It Steams",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotAsBadAsItSteams/carousel.git"
+  },
+  "author": "Andy Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NotAsBadAsItSteams/carousel/issues"
+  },
+  "homepage": "https://github.com/NotAsBadAsItSteams/carousel#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "express": "^4.16.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.0"
+  }
+}
