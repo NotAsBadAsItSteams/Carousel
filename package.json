@@ -4,7 +4,7 @@
   "description": "Not As Bad As It Steams",
   "main": "./server/index.js",
   "scripts": {
-    "start:dev": "babel-node server/index.js",
+    "start:dev": "nodemon --exec babel-node server/index.js",
     "test": "jest"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.0",
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.17.1",
+    "supertest": "^3.0.0"
   }
 }
