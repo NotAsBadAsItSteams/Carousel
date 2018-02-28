@@ -1,4 +1,4 @@
-import {} from 'dotenv';
+import {} from 'dotenv/config';
 
 import server from './server';
 
