@@ -4,6 +4,7 @@
   "description": "Not As Bad As It Steams",
   "main": "./server/index.js",
   "scripts": {
+    "start": "echo 'start script not configured'",
     "start:dev": "nodemon --exec babel-node server/index.js",
     "test": "jest"
   },
