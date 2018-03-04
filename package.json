@@ -4,9 +4,10 @@
   "description": "Not As Bad As It Steams",
   "main": "./server/index.js",
   "scripts": {
-    "start": "echo 'start script not configured'",
+    "start": "node compiled/index.js",
     "start:dev": "nodemon --exec babel-node server/index.js",
-    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "postinstall": "npx babel server --out-dir compiled && npx webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "nodemon": "^1.17.1",
     "supertest": "^3.0.0",
     "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
     "webpack-dev-middleware": "^3.0.0",
     "webpack-hot-middleware": "^2.21.1"
   }
